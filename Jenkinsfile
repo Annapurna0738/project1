@@ -12,7 +12,7 @@ pipeline{
             }
         }
         stage('server diskusage'){
-            step{
+            steps{
                 sh 'df -h'
             }
         }
