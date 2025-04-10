@@ -26,5 +26,10 @@ pipeline{
                 sh 'free -h'
             }
         }
+        stage('server disk partition'){
+            steps{
+                sh 'lsblk'
+            }
+        }
     }
 }
